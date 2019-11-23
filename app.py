@@ -23,7 +23,7 @@ class MyClient(discord.Client):
                 await channel.send("no u adny")
             if "aya" in message.content.lower():
                 await channel.send("AYAYA")
-            if message.mention_everyone = true:
+            if message.mention_everyone:
                 ree = "RE"
                 for i in range(randrange(100)):
                     ree.join("E")
