@@ -1,6 +1,6 @@
 import discord
 from os import environ
-from random import randrange
+from random import randint
 class MyClient(discord.Client):
     scammers = ["sk", "scam", "mcdonalds", "mcds", "pc", "miguk", "dominos",
                 "tfmun", "milestone", "scene", "montanas", "movie","discount",
@@ -23,9 +23,13 @@ class MyClient(discord.Client):
                 await channel.send("no u adny")
             if "aya" in message.content.lower():
                 await channel.send("AYAYA")
+            if "gay" in message.content.lower():
+                await channel.send("no u")
+            if "no u" in message.content.lower():
+                await channel.send("no u")
             if message.mention_everyone:
                 ree = "RE"
-                for i in range(randrange(100)):
+                for i in range(randint(0, 100)):
                     ree += "E"
                 await channel.send(ree)
 
