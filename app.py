@@ -1,4 +1,5 @@
 import discord
+from os import environ
 from random import randrange
 class MyClient(discord.Client):
     scammers = ["sk", "scam", "mcdonalds", "mcds", "pc", "miguk", "dominos",
@@ -23,13 +24,10 @@ class MyClient(discord.Client):
             if "aya" in message.content.lower():
                 await channel.send("AYAYA")
             if message.mention_everyone = true:
-                count = 0
-                
-                while (count < randrange(100)):
-                    count = count + 1
-
-
-                await channel.send("REEEEEEEEEEEEEEEEE")
+                ree = "RE"
+                for i in range(randrange(100)):
+                    ree.join("E")
+                await channel.send(ree)
 
 client = MyClient()
-client.run(process.env.BOT_TOKEN)
+client.run(environ[BOT_TOKEN])
