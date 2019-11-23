@@ -30,4 +30,4 @@ class MyClient(discord.Client):
                 await channel.send(ree)
 
 client = MyClient()
-client.run(environ[BOT_TOKEN])
+client.run(environ["BOT_TOKEN"])
