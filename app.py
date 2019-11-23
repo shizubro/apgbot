@@ -26,7 +26,7 @@ class MyClient(discord.Client):
             if message.mention_everyone:
                 ree = "RE"
                 for i in range(randrange(100)):
-                    ree.join("E")
+                    ree += "E"
                 await channel.send(ree)
 
 client = MyClient()
